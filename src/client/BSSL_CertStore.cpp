@@ -97,7 +97,7 @@ namespace bssl
 
   // The certs.ar file is a UNIX ar format file, concatenating all the
   // individual certificates into a single blob in a space-efficient way.
-  int CertStore::initCertStore(FS &fs, const char *indexFileName, const char *dataFileName)
+  int CertStore::initCertStore(fs::FS &fs, const char *indexFileName, const char *dataFileName)
   {
     int count = 0;
     uint32_t offset = 0;
